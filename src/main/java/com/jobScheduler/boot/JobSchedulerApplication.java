@@ -50,8 +50,6 @@ public class JobSchedulerApplication implements CommandLineRunner{
 		
 		//Using Quatrz
 		DynamoDBUtilities.initaiteInsertionJob(insertionInterval, mainTable);
-		DynamoDBUtilities.initaiteArchivingJob(archivingInterval, mainTable, archivedTable);*/
+		DynamoDBUtilities.initaiteArchivingJob(archivingInterval, mainTable, archivedTable);
 	}
-	
-	
 }
