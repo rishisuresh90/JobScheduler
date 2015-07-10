@@ -1,6 +1,5 @@
 package com.jobScheduler.boot;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,7 +20,7 @@ public class JobSchedulerApplication implements CommandLineRunner{
 	private String mainTableKey = "Id";
 	private String archivedTableKey = "Id";
 	private Integer insertionInterval = 20;
-	private Integer archivingInterval = 60;
+	private Integer archivingInterval = 120;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(JobSchedulerApplication.class, args);
